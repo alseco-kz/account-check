@@ -1,0 +1,22 @@
+name: zb-cailapub
+
+entryPoint: main.sc
+
+botEngine: v2
+language: ru
+
+tests:
+  include:
+    - test.xml
+
+nlp:
+  intentNoMatchThresholds:
+    phrases: 0.15
+    patterns: 0.25
+    nbest: 3
+    modifyRequestInPreMatch: true
+sts:
+    noMatchThreshold: 0.2
+
+caila:
+    noMatchThreshold: 0.2

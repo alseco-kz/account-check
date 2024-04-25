@@ -1,0 +1,19 @@
+{
+  "positions" : [ {
+    "id" : "/Start",
+    "x" : 1070,
+    "y" : 988
+  }, {
+    "id" : "/NoMatch",
+    "x" : 290,
+    "y" : 998
+  }, {
+    "id" : "/FinishDialogs",
+    "x" : 1070,
+    "y" : 1995
+  }, {
+    "id" : "/speechNotRecognizedGlobal",
+    "x" : 290,
+    "y" : 1737
+  } ]
+}

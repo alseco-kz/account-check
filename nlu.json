@@ -1,0 +1,325 @@
+{
+  "project" : {
+    "id" : "bot_accountcheck_kz-1000013-pqJ",
+    "name" : "bot_accountcheck_kz-1000013-pqJ",
+    "folder" : "/platform"
+  },
+  "settings" : {
+    "language" : "ru",
+    "spellingCorrection" : false,
+    "classificationAlgorithm" : "sts",
+    "timezone" : "Europe/Moscow",
+    "extendedSettings" : {
+      "tokenizerEngine" : "mystem",
+      "useShared" : false
+    },
+    "shared" : false,
+    "validation" : {
+      "phraseValidationEnabled" : true,
+      "answerValidationEnabled" : true,
+      "phraseValidationThreshold" : 0.5,
+      "answerValidationThreshold" : 0.8
+    }
+  },
+  "intents" : [ {
+    "path" : "/пока",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "пока"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/привет",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "привет"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/НеЗнаю",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "знаю не"
+    }, {
+      "text" : "не помню"
+    }, {
+      "text" : "не могу сказать "
+    }, {
+      "text" : "запамятовал немного"
+    }, {
+      "text" : "Без понятия"
+    }, {
+      "text" : " имею понятия"
+    }, {
+      "text" : "уверен(а)"
+    }, {
+      "text" : "Понятия не  имею"
+    }, {
+      "text" : "представления"
+    }, {
+      "text" : "Вопрос сложный"
+    }, {
+      "text" : "кто его знает"
+    }, {
+      "text" : "Трудно сказать"
+    }, {
+      "text" : "не знаю"
+    }, {
+      "text" : "я   не помню"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/НеСогласие",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "(нет извините|извините нет|да зачем мне|да незачем|да мне зачем|да не интересует|ничего не желаю|не ничего|все не надо|все не надо|не не надо спасибо большое|уже не надо|не надо ничего|надо не надо|ой не надо спасибо|ничего мне не надо спасибо|девушка не надо спасибо|это не интересно|мне надо спасибо|не интересно это|мне спасибо|у меня уже есть|ничего все до свидания|да не|да не не надо спасибо|да мне не удобно|да не удобно мне|не стоит|мне не нужны деньги|да не просто как бы смысла нет|не интересно|не знаю|надо ничего|мне не нужна смс|да ну *|* не * (сбрось*/сбрасывай*/пошлите/посылай*/управляй/направь*/направляй*/треб*) *|* не * (скинь*/скидывай*/кинь*/кидай/проправь/поправляй*)|* не * (отправляй*/не отправлял*/отправ*) *|* да ну нафи* *|* пока что не *|* да нет *|* нет * [мне] не надо *|* нет *|* надо мне ничего отправлять *|* не нужен *|* [да] не надо мне *|* никакой кредит *|* не заказывал *|да мне не надо *|* [мне] (не нужно/не надо) [ничего] *|* [ничего] [мне] (не нужно/не надо) *|* (не нужно/не надо) * [ничего] [мне] *|* (спасибо/благодарю) нет *|* нет (спасибо/благодарю) *|* {спасибо не*} *|* [я] (откажусь/отказываюсь) *|* (откажусь/отказываюсь) [я] *|* никакую *|* не надо мне ничего отправлять|* отправлять мне ничего не нужно|* не надо мне ничего *|нет не не нужно|* я уже|он актуально|* уже я * *|* пожалуйста не* *|не* пожалуйста *|* зачем мне это надо * пожалуйста *|* не (хочу/хотел* бы/хотелось */хочется) *|* я не буду ничего *|* оно вам надо *|* мне не интересно *|* не надо спасибо да|* да вообще блин *|нет да не не не [не]|* не желаю [спасибо] *|* не хочу *|ничего не *|* не интересно|мне не (нужно/надо) [спасибо]|* пока не надо спасибо|* пока ничего|* не надо мне ничего *|девушка не интересно [спасибо]|уже не актуально *|не это не интересно * спасибо|* [спасибо] меня * не интересует|* пока не интересует|[нет] я не (согласен|согласна)|* смысла нет *|* нет смысла *|* не стоит это мне сейчас не интересует|* нет я пока не нуждаюсь|спасибо всё есть *|давайте вы [мне] ничего не будете отправлять|хорошо [мне] не надо [спасибо]|* давайте в следующий раз (как нибудь/не сейчас) *|* да я не буду *|* уже не* нужд* *)"
+    }, {
+      "text" : "давайте без этого"
+    }, {
+      "text" : "нет времени на это"
+    }, {
+      "text" : "когда-нибудь потом"
+    }, {
+      "text" : "нет не было"
+    }, {
+      "text" : "нет"
+    }, {
+      "text" : "дұрыс емес"
+    }, {
+      "text" : "оған уақыт жоқ"
+    }, {
+      "text" : "жоқ"
+    }, {
+      "text" : "жок"
+    }, {
+      "text" : "қажеті жоқ"
+    }, {
+      "text" : "жук"
+    }, {
+      "text" : "сжег"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/Согласие",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "угу"
+    }, {
+      "text" : "было"
+    }, {
+      "text" : "да"
+    }, {
+      "text" : "иә жарайды"
+    }, {
+      "text" : "келісемін"
+    }, {
+      "text" : "енді қайтеміз"
+    }, {
+      "text" : "окей"
+    }, {
+      "text" : "бар"
+    }, {
+      "text" : "я"
+    }, {
+      "text" : "я"
+    }, {
+      "text" : "болды"
+    }, {
+      "text" : "келды"
+    }, {
+      "text" : "приходи"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ "(слушаю|продолжайте|говорите|да|я слушаю|я готов сейчас|удобно сейчас|мне удобно сейчас|ворите|сейчас говорите|я слушаю)" ],
+    "priority" : 0
+  }, {
+    "path" : "/Дата",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "@duckling.date принесли"
+    }, {
+      "text" : "Это было @duckling.date"
+    }, {
+      "text" : "На @duckling.date вроде как было"
+    }, {
+      "text" : "угу @duckling.date"
+    }, {
+      "text" : "угу @duckling.time"
+    }, {
+      "text" : "На @duckling.time вроде как было"
+    }, {
+      "text" : "Это было @duckling.time"
+    }, {
+      "text" : "я получил ее @duckling.time"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/Казахский_язык",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "казакша"
+    }, {
+      "text" : "на казахском"
+    }, {
+      "text" : "казакша сойлейш"
+    }, {
+      "text" : "по казахски"
+    }, {
+      "text" : "калаша слиш"
+    }, {
+      "text" : " казакша казакша"
+    }, {
+      "text" : "казахша"
+    }, {
+      "text" : "лошадь"
+    }, {
+      "text" : "орша тусынбейм"
+    }, {
+      "text" : "қазақша "
+    }, {
+      "text" : "орыс тілінде мен түсінбеймін"
+    }, {
+      "text" : "түсінбеймін"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  } ],
+  "entities" : [ ],
+  "enabledSystemEntities" : [ "duckling.number", "duckling.time", "duckling.duration", "duckling.phone-number", "duckling.email", "duckling.url" ],
+  "spellerDictionary" : [ ],
+  "systemEntities" : [ {
+    "name" : "mystem.geo",
+    "enabled" : false
+  }, {
+    "name" : "mystem.persn",
+    "enabled" : false
+  }, {
+    "name" : "mystem.obsc",
+    "enabled" : false
+  }, {
+    "name" : "mystem.patrn",
+    "enabled" : false
+  }, {
+    "name" : "mystem.famn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.romn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.latn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.numb",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.intg",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.abbr",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.name",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.surn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.patr",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.geox",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.orgn",
+    "enabled" : false
+  }, {
+    "name" : "duckling.number",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.ordinal",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.amount-of-money",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.distance",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.time",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.date",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.time-of-day",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.duration",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.phone-number",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.email",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.url",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.interval",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "mlps-obscene.obscene",
+    "enabled" : false
+  }, {
+    "name" : "zb.datetime",
+    "enabled" : false
+  }, {
+    "name" : "zb.number",
+    "enabled" : false
+  } ],
+  "faq" : [ ],
+  "skills" : [ ]
+}
