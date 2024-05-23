@@ -168,13 +168,13 @@ theme: /
                     $temp.row = 0
                     $temp.count=0
                     for(var i = 1 ; i < values.length; i ++){ 
-                            if  (values[i] == $request.userFrom.firstName){
-                                $temp.temp = 1
-                                $temp.row = i
-                                break
-                            }
+                        if  (values[i] == $request.userFrom.firstName){
+                            $temp.temp = 1
+                            $temp.row = i
+                            break
+                        }
                         
-                        } 
+                    } 
                     if($temp.temp ==1){
                         $temp.count = Return_Count($temp.row)
                     }
@@ -182,21 +182,21 @@ theme: /
                 if: $temp.temp ==1
                     GoogleSheets:
                         operationType = clearCellData
-                        integrationId = 8fc0fbcd-3f4e-40e9-bcd6-afe264acebc4
-                        spreadsheetId = 1mKKaRoY--a76CPJv7jAhefcQWI5KbdrPWHuHbD5Nqbc
+                        integrationId = 75ccb038-dd32-41fe-8328-122699d2bedc
+                        spreadsheetId = 1mCVy2yB4oBFjpzJAOiyduII2ZzatrZgAmbRBXsXRJqQ
                         sheetName = IntegrationList
                         body = {"values":["A{{$temp.row+1}}:O{{$temp.row+1}}"]}
                     GoogleSheets:
                         operationType = writeDataToLine
-                        integrationId = 8fc0fbcd-3f4e-40e9-bcd6-afe264acebc4
-                        spreadsheetId = 1mKKaRoY--a76CPJv7jAhefcQWI5KbdrPWHuHbD5Nqbc
+                        integrationId = 75ccb038-dd32-41fe-8328-122699d2bedc
+                        spreadsheetId = 1mCVy2yB4oBFjpzJAOiyduII2ZzatrZgAmbRBXsXRJqQ
                         sheetName = IntegrationList
                         body = {"values": [ "{{$dialer.getPayload().лицевой_счет}}","{{$dialer.getPayload().населенный_пункт}}", "{{$dialer.getPayload().тип_улицы_микрорайона}}",  "{{$dialer.getPayload().улица}}","{{$dialer.getPayload().дом}}", "{{$dialer.getPayload().квартира}}", "{{$dialer.getPayload().номер_телефона}}","{{$dialer.getPayload().реестр_печати_по_последней_печати}}","{{$dialer.getPayload().способ_доставки}}","{{$session.new}}","{{$temp.count}}","{{currentDate().locale("ru").format("dddd, MMMM Do YYYY, h:mm:ss a")}}","{{$session.second_state}}","{{$session.third_state}}",{{toPrettyString($request.userFrom.firstName)}}]}
                 else
                     GoogleSheets:
                         operationType = writeDataToLine
-                        integrationId = 8fc0fbcd-3f4e-40e9-bcd6-afe264acebc4
-                        spreadsheetId = 1mKKaRoY--a76CPJv7jAhefcQWI5KbdrPWHuHbD5Nqbc
+                        integrationId = 75ccb038-dd32-41fe-8328-122699d2bedc
+                        spreadsheetId = 1mCVy2yB4oBFjpzJAOiyduII2ZzatrZgAmbRBXsXRJqQ
                         sheetName = IntegrationList
                         body = {"values":  [   "{{$dialer.getPayload().лицевой_счет}}","{{$dialer.getPayload().населенный_пункт}}", "{{$dialer.getPayload().тип_улицы_микрорайона}}",  "{{$dialer.getPayload().улица}}","{{$dialer.getPayload().дом}}", "{{$dialer.getPayload().квартира}}", "{{$dialer.getPayload().номер_телефона}}","{{$dialer.getPayload().реестр_печати_по_последней_печати}}","{{$dialer.getPayload().способ_доставки}}","{{$session.new}}","1","{{currentDate().locale("ru").format("dddd, MMMM Do YYYY, h:mm:ss a")}}","{{$session.second_state}}","{{$session.third_state}}",{{toPrettyString($request.userFrom.firstName)}}]}
 

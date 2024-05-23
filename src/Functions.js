@@ -1,8 +1,8 @@
 function Integration_Test_Google(){
     try {
         var response = $integration.customRequest(
-                "8fc0fbcd-3f4e-40e9-bcd6-afe264acebc4",
-                "https://sheets.googleapis.com/v4/spreadsheets/" + "1mKKaRoY--a76CPJv7jAhefcQWI5KbdrPWHuHbD5Nqbc" + "/values/O1:O",
+                "75ccb038-dd32-41fe-8328-122699d2bedc",
+                "https://sheets.googleapis.com/v4/spreadsheets/" + "1mCVy2yB4oBFjpzJAOiyduII2ZzatrZgAmbRBXsXRJqQ" + "/values/O1:O",
                 "GET",
                 null,
                 null
@@ -22,8 +22,8 @@ function Integration_Test_Google(){
 function Return_Count(row){
     try {
         var response_count = $integration.customRequest(
-                "8fc0fbcd-3f4e-40e9-bcd6-afe264acebc4",
-                "https://sheets.googleapis.com/v4/spreadsheets/" + "1mKKaRoY--a76CPJv7jAhefcQWI5KbdrPWHuHbD5Nqbc" + "/values/K1:K",
+                "75ccb038-dd32-41fe-8328-122699d2bedc",
+                "https://sheets.googleapis.com/v4/spreadsheets/" + "1mCVy2yB4oBFjpzJAOiyduII2ZzatrZgAmbRBXsXRJqQ" + "/values/K1:K",
                 "GET",
                 null,
                 null
